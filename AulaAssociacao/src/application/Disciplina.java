@@ -36,7 +36,12 @@ public class Disciplina {
 		System.out.println("++++++ Disciplina ++++++");
 		System.out.println("Nome: " + this.getNome());
 		System.out.println("Carga Horaria: " + this.getCargaHoraria());
-		System.out.println("Professor: " + this.getProfessor().getNome());
+		//System.out.println("Professor: " + this.getProfessor().getNome());
+	
+		Professor prof = this.getProfessor();
+		if(prof != null) {
+			prof.exibirDados();
+		}
 	}
 
 }
